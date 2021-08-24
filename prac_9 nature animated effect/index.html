@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>parallax scrolling effect</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#"class="logo">jungle</a>
+        <ul>
+            <li><a href="#"class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+</header>
+<section>
+    <h2 id="text"><span>it's time for a new</span><br>Adventure</h2>
+    <img src="bird1.png" id="bird1">
+    <img src="bird2.png" id="bird2">
+    <img src="forest.png" id="forest">
+    <a href="#" id="btn">explore</a>
+    <img src="rocks.png" id="water">
+    <img src="water.png" id="rock">
+
+
+    
+</section>
+<div class="sec">
+    <h2>parallex scrolling effects</h2>
+    <p>Technology is everywhere and around us. The thing that you put in your pocket while travelling, your mobile phone is the most prime example of technology.
+        GPS navigation, computer, internet, fan, A/C, and every other device we use in our daily lives are also prime examples of technology. Without technology, 
+        life would be dull and hard. Nowadays, countries that have more advanced technologies are developing day by day.It is observed in a survey that people can’t 
+        live without technology even a single day as they survive on cell phonesPeople get so addicted to technological devices that they are not able to work without them.
+        Many companies and industries are dependent on these technologiesto operate their functions and manufacture goods.People are so addicted 
+        that they prefer to use their mobile phones to communicate rather than communicating face to face. This affects their mental health and also their relationship with friends and family.
+        People spend lots of money on buying new technology as they have advanced and better features.
+        he Internet is the prime cause of addiction to mobile phones and computers. It was introduced as a medium to help people for searching for information and data but people started misusing the internet which results in addiction. 
+        People started spending hours and hours on mobile phones surfing the internet and watching online videos.
+        Nowadays even children have to wear glasses because of weak eyesight due to continuously using mobile phones and computers.If you sit in front of a computer for hours and hours then it will lead to many problems like weak eyesight, 
+        weight gain which increases the chance of cardiovascular diseases.If you talk too much on cell phones then because of their radiation, your eardrums can be damaged and there are also chances of brain tumours. The radiations that are released 
+        from mobile towers are very harmful to the body as they can increase the chances of cancer and other deadly diseases.People are so dependent on technology that sometimes it becomes the reason for illness or stress in relationships. 
+        Some people misuse technology and steal data or money from people through social networking sites and other platforms. 
+        Thus, it is advised to stay connected to nature and other outdoor activities to keep yourself away from the adverse effects caused due to overuse of technological devicesIt should be 
+        in mind that video games, social media sites and the web are designed in such a way that they promote dependency on the internet and technology causing negative 
+        side effects to the adults and the youth. However, technology addiction can be cured by replacing the time spent online with healthy stress management, productive activities, building healthy relationships,
+        practising creative skills and learning more through books.Technology addiction is equivalent to addiction to drugs and it is advised to seek professional help for curing the </p>
+</div>
+<script>
+    let text=document.getElementById('text');
+    let bird1=document.getElementById('bird1');
+    let bird2=document.getElementById('bird2');
+    let btn=document.getElementById('btn');
+    let rocks=document.getElementById('rocks');
+    let forest=document.getElementById('forest');
+    let water=document.getElementById('water');
+    let header=document.getElementById('header');
+    window.addEventListener('scroll',function(){
+        let value=window.scrollY;
+        text.style.top=50 + value * -0.5+'%';
+        bird1.style.top=value * -1.5+'px';
+        bird1.style.top=value * -2.5+'px';
+        bird2.style.top=value * -1.5+'px';
+        bird2.style.top=value * -5+'px';
+        btn.style.marginTop=value* 1.5+'px';
+        rocks.style.top=value* -0.12+'px';
+        forest.style.top=value* 0.25+'px';
+        header.style.top=value* -0.12+'px';
+    })
+</script>
+</body>
+</html>     
