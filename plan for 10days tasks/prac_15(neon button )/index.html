@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+    <div class="box">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    <div class="content" >
+     <h1>opened</h1>
+</div>
+</div>
+    <script>
+        var btn = document.getElementById("btn");
+        
+         btn.onclick=function(){
+          if(btn.classlist.contains("btn")){ 
+            btn.classList.remove("btn");
+            btn.innerHTML="opened";
+          }
+          else{
+            btn.classList.add("btn");
+            btn.innerHTML="closed";
+          }
+        }
+    </script>
+</body>
+</html>

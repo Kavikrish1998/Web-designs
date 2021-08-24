@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.container{
+    box-sizing:border-box;
+    background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.2)),url("temple.jpg");
+    background-size: cover;
+    width: 1350px;
+    height:100vh;
+    
+}
+.navbar{
+    height:20%;
+    display:flex;
+    align-items:center
+}
+nav{
+    flex:1;
+    text-align: right;
+    justify-content: space-between;
+}
+nav ul li  {
+    list-style: none;
+    display:inline-block;
+    margin-left: 30px;;
+}
+nav ul li a{
+    font-size: 1.5em;
+    color:#000;
+    font-weight:200;
+    text-decoration: none;
+}
+
+.menuicon{
+    width:30px;
+    height:auto;
+    margin-top:-6%;
+    cursor:pointer;   
+    }
+.row{
+    display:flex;
+    height:88%;
+    align-items: center;
+
+}
+.col{
+    flex-basis:50%;
+
+}
+h1{
+    color:#fff;
+    font-size: 50px;
+    line-height: 91px;
+
+}
+p{
+    color:#fff;
+    font-size: 20px;
+
+ 
+}
+button{
+    border-radius: 50px;
+    padding:12px;
+    width: 180px;
+    margin-top:30px;
+    transition: 0.5s;
+    font-size: 3s0px;
+    color:crimson;
+    font-size: 1.5em;
+    
+}
+.gallery {
+    width:200px;
+    height: 230px;
+    display:inline-block;
+    border-radius: 10px;
+    padding:10px 50px;
+    box-sizing:border-box;
+    cursor:pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+.pic1{
+    background-image: url("temple1.jpg");
+}
+.pic2{
+    background-image: url("temple2.jpg");
+}
+.pic3{
+    background-image: url("temple3.jpg");
+}
+.pic4{
+    background-image: url("temple4.jpg");
+}
+.gallery:hover{
+    transform: translateY(-60px);
+}
+button:hover{
+    transform:translate(-10px)
+}
