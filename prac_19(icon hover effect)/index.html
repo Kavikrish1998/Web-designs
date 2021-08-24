@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icon hover effect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+  <section class="media">
+    <ul class="box">
+      <li data-text="facebook" data-color="#084391">
+        <a href="#"class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li data-text="instagram" data-color="#fc0a83">
+        <a href="#"class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li data-text="twitter" data-color="#088ae0">
+        <a href="#"class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li data-text="youtube" data-color="#da0909">
+        <a href="#"class="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+    </ul>
+  </section>
+  
+  <script>
+    let list = document.querySelectorAll('.box li');
+    let bg = document.querySelector('.media');
+    list.forEach(element => {
+      elements.addEventListener('mouseenter',function(event)
+      {
+      let color = event.target.getAttribute('data-color');
+      bg.style.backgroundColor = color;
+      })
+      elements.addEventListener('mouseleave',function(event)
+      {
+      bg.style.backgroundColor = '#fff';
+      })
+    })
+
+  </script>
+</body>
+</html>
